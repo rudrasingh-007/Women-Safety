@@ -84,7 +84,13 @@ fig.update_layout(
         "y": 1.05,
         "yanchor": "top"
     }],
-    geo=dict(fitbounds="locations", visible=False),
+    geo=dict(
+        fitbounds="locations", 
+        visible=True,
+        showcountries=True,
+        countrycolor="Black",
+        countrywidth=0.5,
+    ),
     margin={"r":0,"t":50,"l":0,"b":0}
 )
 
