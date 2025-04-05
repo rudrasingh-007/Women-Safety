@@ -1,0 +1,73 @@
+/* src/styles/animations.css */
+
+/* Example Keyframes from source project (adapt as needed) */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px); /* Slightly less distance */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px); /* Slightly less distance */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseScale {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); } /* Slightly less intense pulse */
+  100% { transform: scale(1); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Example Animation Classes */
+.animate-fadeIn {
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.7s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.7s ease-out forwards;
+}
+
+.animate-pulseScale {
+  animation: pulseScale 2s infinite ease-in-out;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Add other keyframes (shimmer, ripple - if not using MUI default, etc.) */
+/* and corresponding classes here if you want to use them globally */
+
+/* Example using sx: define keyframes globally */
+/* @keyframes slideDown { ... } */
